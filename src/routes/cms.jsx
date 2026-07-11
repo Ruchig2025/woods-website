@@ -43,7 +43,7 @@ function CMS(){
 
     const callAPI= async()=>{
         try{
-            const response= await fetch("https://mywoods-api.onrender.com/api/woods",{
+            const response= await fetch("https://testbackend-eelb.onrender.com/api/woods",{
                 method:"GET",
             });
 
@@ -81,7 +81,7 @@ function CMS(){
 
 
        
-            const response= await fetch("https://mywoods-api.onrender.com/api/woods",{
+            const response= await fetch("https://testbackend-eelb.onrender.com/api/woods",{
                 method:"POST",
                 headers:{
                     "Content-Type":"application/json",
@@ -114,7 +114,7 @@ function CMS(){
 
     const callDeleteAPI= async()=>{
         try{
-            const response= await fetch("https://mywoods-api.onrender.com/api/woods/"+id,{
+            const response= await fetch("https://testbackend-eelb.onrender.com/api/woods"+id,{
                 method:"DELETE",
                  headers:{
                     "Content-Type":"application/json",
@@ -156,7 +156,7 @@ function CMS(){
             };
 
 
-            const response= await fetch("https://mywoods-api.onrender.com/api/woods/"+id,{
+            const response= await fetch("https://testbackend-eelb.onrender.com/api/woods/"+id,{
                 method:"PUT",
                  headers:{
                     "Content-Type":"application/json",
